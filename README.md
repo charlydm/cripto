@@ -23,3 +23,6 @@ Ej: C:\workspace\cripto\target>java -jar cripto-0.0.1.jar
 ```bash
 java -jar cripto-0.0.1.jar
 ```
+
+**Uso de Postman**
+-Importar de la carpeta Postman Collection Json
