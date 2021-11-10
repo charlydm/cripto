@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "c34e6bb4-6a75-47bc-a830-db75f54f7754",
+		"name": "Wenance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "last_price_BTC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://cex.io/api/last_price/BTC/USD"
+			},
+			"response": []
+		},
+		{
+			"name": "last_price_ETH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://cex.io/api/last_price/ETH/USD"
+			},
+			"response": []
+		},
+		{
+			"name": "convert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amnt\": 2.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://cex.io/api/convert/ETH/USD"
+			},
+			"response": []
+		},
+		{
+			"name": "cripto_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/cripto"
+			},
+			"response": []
+		},
+		{
+			"name": "cripto_symbol",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/cripto/symbol/BTC"
+			},
+			"response": []
+		},
+		{
+			"name": "cripto_date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/cripto/2021-11-08 12:30:10"
+			},
+			"response": []
+		},
+		{
+			"name": "cripto_save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lprice\": \"66922.4\",\r\n    \"curr1\": \"BTC\",\r\n    \"curr2\": \"USD\",\r\n    \"amnt\": 2.5,\r\n    \"date\": \"2021-11-08T12:30:10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/cripto"
+			},
+			"response": []
+		},
+		{
+			"name": "cripto_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/cripto/delete/6185c328127cfb37a6973e15"
+			},
+			"response": []
+		}
+	]
+}
